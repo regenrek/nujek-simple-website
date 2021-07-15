@@ -1,10 +1,11 @@
 import { forwardProps } from '@nujek/shared'
-import Text from '~/components/atoms/Text'
+import TextImage from '~/components/TextImage'
 export default {
-  name: 'BlokImage',
-  props: ['Blok'],
+  name: 'BlokTextImage',
+  props: ['blok'],
+  functional: true,
   render (h, context) {
-    return h(Text, {
+    return h(TextImage, {
       props: forwardProps(context.props.blok)
     })
   }
